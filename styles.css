@@ -1,0 +1,110 @@
+/* styles.css - Shawn Odom Personal Portfolio */
+
+:root {
+  --dark: #212529;
+  --accent: #0d6efd;
+  --light: #f8f9fa;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --border: #dee2e6;
+}
+
+/* Offset for the fixed navbar at the top */
+body {
+  padding-top: 56px;
+  color: var(--dark);
+}
+
+/* ── Navbar ── */
+.navbar-brand {
+  font-weight: 700;
+}
+
+/* ── Sections ── */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  margin-bottom: 0.25rem;
+}
+
+/* ── Hero / Home ── */
+#home {
+  background-color: var(--dark);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#home .lead {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Muted color for the subtitle text in the hero */
+#home p {
+  color: #adb5bd;
+  margin-bottom: 2rem;
+}
+
+/* ── About ── */
+/* Circular profile photo */
+.headshot {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+}
+
+/* ── Work ── */
+/* Each job entry separated by a bottom border */
+.work-item {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.work-item:last-child {
+  border-bottom: none;
+}
+
+/* Small gray date label above each job title */
+.work-date {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.work-item h5 {
+  margin: 0.2rem 0 0.1rem;
+}
+
+/* Accent colored org name under each job title */
+.work-org {
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: var(--dark);
+  color: #adb5bd;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  color: #adb5bd;
+}
+
+footer a:hover {
+  color: var(--white);
+}
