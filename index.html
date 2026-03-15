@@ -70,9 +70,7 @@
               &nbsp;·&nbsp; GPA 3.89
             </p>
             <a href="#projects" class="btn btn-primary me-2">View Projects</a>
-            <a href="#contact" class="btn btn-outline-secondary"
-              >Get in Touch</a
-            >
+            <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
           </div>
         </section>
         <!-- About section with a short bio and profile photo placeholder -->
@@ -332,8 +330,8 @@
                     <p class="card-text">
                       A C++ turn-based game where 2+ players navigate a map
                       collecting treasure. Built in 2 weeks for CS 302,
-                      featuring a full class hierarchy — Player, Explorer,
-                      Archaeologist, and TreasureHunter — each with unique
+                      featuring a full class hierarchy: Player, Explorer,
+                      Archaeologist, and TreasureHunter. Each with unique
                       abilities.
                     </p>
                     <p class="card-text">
@@ -356,6 +354,57 @@
             </div>
           </div>
         </section>
+        <!-- Contact section with a form for reaching out -->
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <hr />
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <p>Feel free to reach out whether it's about a project, an opportunity, or just to connect.</p>
+
+              <!-- Contact form, validation is handled in main.js -->
+              <form id="contactForm" novalidate>
+
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your full name" required />
+                  <div class="invalid-feedback" id="nameError"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="your@email.com" required />
+                  <div class="invalid-feedback" id="emailError"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="What would you like to discuss?" required></textarea>
+                  <div class="invalid-feedback" id="messageError"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+
+                <!-- Success message shown after form is submitted -->
+                <div id="formSuccess" class="mt-3 text-success" role="status" aria-live="polite"></div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with links to GitHub and LinkedIn -->
+    <footer>
+      <div class="container text-center">
+        <p>Shawn Odom &nbsp;·&nbsp; CS 463/563 PSU &nbsp;·&nbsp;
+          <a href="https://github.com/shawn-odom" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;·&nbsp;
+          <a href="https://www.linkedin.com/in/shawn-odom-80a68a32b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </footer>
       </main>
     </main>
   </body>
