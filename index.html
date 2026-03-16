@@ -59,336 +59,348 @@
     </nav>
 
     <main>
-      <main>
-        <!-- Home section, full page intro with my name and a couple quick action buttons -->
-        <section id="home">
-          <div class="container text-center">
-            <h1>Hi, I'm Shawn Odom</h1>
-            <p class="lead">CS Student @ Portland State University</p>
-            <p>
-              B.S. Computer Science &nbsp;·&nbsp; Expected June 2026
-              &nbsp;·&nbsp; GPA 3.89
-            </p>
-            <a href="#projects" class="btn btn-primary me-2">View Projects</a>
-            <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
+      <!-- Home section, full page intro with my name and a couple quick action buttons -->
+      <section id="home">
+        <div class="container text-center">
+          <h1>Hi, I'm Shawn Odom</h1>
+          <p class="lead">CS Student @ Portland State University</p>
+          <p>
+            B.S. Computer Science &nbsp;·&nbsp; Expected June 2026 &nbsp;·&nbsp;
+            GPA 3.89
+          </p>
+          <a href="#projects" class="btn btn-primary me-2">View Projects</a>
+          <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
+        </div>
+      </section>
+      <!-- About section with a short bio and profile photo placeholder -->
+      <section id="about">
+        <div class="container">
+          <h2>About</h2>
+          <hr />
+          <div class="row align-items-center g-4">
+            <!-- Profile photo, will be replaced with real headshot later -->
+            <div class="col-md-3 text-center">
+              <img src="headshot.jpg" alt="Shawn Odom" class="headshot" />
+            </div>
+
+            <!-- Brief personal and professional introduction -->
+            <div class="col-md-9">
+              <p>
+                I'm a Computer Science student at Portland State University with
+                a 3.89 GPA, expected to graduate in June 2026. I'm based in
+                Beaverton, OR.
+              </p>
+              <p>
+                I have hands-on experience in automotive hardware/software
+                integration from my internship at
+                <strong>Jaguar Land Rover</strong>, where I worked on ECU
+                validation, HIL testing, and vehicle networking. I also
+                volunteer with PSU's
+                <strong>Computer Action Team (CAT)</strong>, helping students
+                with IT support and gaining exposure to systems administration
+                and networking.
+              </p>
+              <p>
+                I enjoy solving complex technical problems and am always looking
+                to grow my skills in both software and systems engineering.
+              </p>
+            </div>
           </div>
-        </section>
-        <!-- About section with a short bio and profile photo placeholder -->
-        <section id="about">
-          <div class="container">
-            <h2>About</h2>
-            <hr />
-            <div class="row align-items-center g-4">
-              <!-- Profile photo, will be replaced with real headshot later -->
-              <div class="col-md-3 text-center">
-                <img
-                  src="headshot.jpg"
-                  alt="Shawn Odom"
-                  class="headshot"
-                  style="
-                    width: 150px;
-                    height: 150px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                  "
-                />
+        </div>
+      </section>
+      <!-- Work experience and skills section -->
+      <section id="work">
+        <div class="container">
+          <h2>Work &amp; Skills</h2>
+          <hr />
+          <div class="row g-4">
+            <!-- Work experience timeline on the left -->
+            <div class="col-md-6">
+              <h4>Experience</h4>
+
+              <!-- Jaguar Land Rover internship -->
+              <div class="work-item">
+                <span class="work-date">06/2025 – Present</span>
+                <h5>Integration Engineer Intern</h5>
+                <p class="work-org">Jaguar Land Rover</p>
+                <p>
+                  Integrated automotive ECUs and embedded hardware across
+                  next-gen vehicle platforms. Managed the HIL testing lab,
+                  designed test rigs, and built automation scripts to streamline
+                  development workflows.
+                </p>
               </div>
 
-              <!-- Brief personal and professional introduction -->
-              <div class="col-md-9">
+              <!-- PSU Computer Action Team volunteering -->
+              <div class="work-item">
+                <span class="work-date">10/2024 – Present</span>
+                <h5>Volunteer – IT Support</h5>
+                <p class="work-org">Computer Action Team (CAT) · PSU</p>
                 <p>
-                  I'm a Computer Science student at Portland State University
-                  with a 3.89 GPA, expected to graduate in June 2026. I'm based
-                  in Beaverton, OR.
+                  Front-desk IT support for students and faculty.
+                  Hardware/software troubleshooting, server maintenance, and
+                  exposure to systems administration and networking.
                 </p>
+              </div>
+
+              <!-- Les Schwab -->
+              <div class="work-item">
+                <span class="work-date">03/2022 – 09/2025</span>
+                <h5>Sales and Service</h5>
+                <p class="work-org">Les Schwab Tires</p>
                 <p>
-                  I have hands-on experience in automotive hardware/software
-                  integration from my internship at
-                  <strong>Jaguar Land Rover</strong>, where I worked on ECU
-                  validation, HIL testing, and vehicle networking. I also
-                  volunteer with PSU's
-                  <strong>Computer Action Team (CAT)</strong>, helping students
-                  with IT support and gaining exposure to systems administration
-                  and networking.
-                </p>
-                <p>
-                  I enjoy solving complex technical problems and am always
-                  looking to grow my skills in both software and systems
-                  engineering.
+                  Delivered automotive service, generated sales, and led team
+                  members in a fast-paced environment.
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-        <!-- Remaining sections will be added here -->
-        <!-- Work experience and skills section -->
-        <section id="work">
-          <div class="container">
-            <h2>Work &amp; Skills</h2>
-            <hr />
-            <div class="row g-4">
-              <!-- Work experience timeline on the left -->
-              <div class="col-md-6">
-                <h4>Experience</h4>
 
-                <!-- Jaguar Land Rover internship -->
-                <div class="work-item">
-                  <span class="work-date">06/2025 – Present</span>
-                  <h5>Integration Engineer Intern</h5>
-                  <p class="work-org">Jaguar Land Rover</p>
-                  <p>
-                    Integrated automotive ECUs and embedded hardware across
-                    next-gen vehicle platforms. Managed the HIL testing lab,
-                    designed test rigs, and built automation scripts to
-                    streamline development workflows.
-                  </p>
-                </div>
+            <!-- Skills accordion on the right -->
+            <div class="col-md-6">
+              <h4>Skills</h4>
 
-                <!-- PSU Computer Action Team volunteering -->
-                <div class="work-item">
-                  <span class="work-date">10/2024 – Present</span>
-                  <h5>Volunteer – IT Support</h5>
-                  <p class="work-org">Computer Action Team (CAT) · PSU</p>
-                  <p>
-                    Front-desk IT support for students and faculty.
-                    Hardware/software troubleshooting, server maintenance, and
-                    exposure to systems administration and networking.
-                  </p>
-                </div>
-
-                <!-- Les Schwab -->
-                <div class="work-item">
-                  <span class="work-date">03/2022 – 09/2025</span>
-                  <h5>Sales and Service</h5>
-                  <p class="work-org">Les Schwab Tires</p>
-                  <p>
-                    Delivered automotive service, generated sales, and led team
-                    members in a fast-paced environment.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Skills accordion on the right -->
-              <div class="col-md-6">
-                <h4>Skills</h4>
-
-                <!-- Bootstrap accordion, each panel is a different skill category -->
-                <div class="accordion" id="skillsAccordion">
-                  <div class="accordion-item">
-                    <h5 class="accordion-header" id="headingSoftware">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseSoftware"
-                        aria-expanded="true"
-                        aria-controls="collapseSoftware"
-                      >
-                        Software &amp; Tools
-                      </button>
-                    </h5>
-                    <div
-                      id="collapseSoftware"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingSoftware"
-                      data-bs-parent="#skillsAccordion"
+              <!-- Bootstrap accordion, each panel is a different skill category -->
+              <div class="accordion" id="skillsAccordion">
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingSoftware">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSoftware"
+                      aria-expanded="true"
+                      aria-controls="collapseSoftware"
                     >
-                      <div class="accordion-body">
-                        Python, C++, C, C#, Linux / QNX / UNIX, Git / GitHub /
-                        GitLab, Jira &amp; Confluence, Wireshark, Android Debug
-                        Bridge (ADB)
-                      </div>
+                      Software &amp; Tools
+                    </button>
+                  </h5>
+                  <div
+                    id="collapseSoftware"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingSoftware"
+                    data-bs-parent="#skillsAccordion"
+                  >
+                    <div class="accordion-body">
+                      Python, C++, C, C#, Linux / QNX / UNIX, Git / GitHub /
+                      GitLab, Jira &amp; Confluence, Wireshark, Android Debug
+                      Bridge (ADB)
                     </div>
                   </div>
+                </div>
 
-                  <div class="accordion-item">
-                    <h5 class="accordion-header" id="headingEmbedded">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseEmbedded"
-                        aria-expanded="false"
-                        aria-controls="collapseEmbedded"
-                      >
-                        Technical &amp; Embedded Systems
-                      </button>
-                    </h5>
-                    <div
-                      id="collapseEmbedded"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingEmbedded"
-                      data-bs-parent="#skillsAccordion"
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingEmbedded">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEmbedded"
+                      aria-expanded="false"
+                      aria-controls="collapseEmbedded"
                     >
-                      <div class="accordion-body">
-                        CAN / LIN / FlexRay, IP-Based Networking, HIL / SIL
-                        Testing, ECU Debugging, Firmware Debugging, Electric
-                        Vehicle Systems
-                      </div>
+                      Technical &amp; Embedded Systems
+                    </button>
+                  </h5>
+                  <div
+                    id="collapseEmbedded"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEmbedded"
+                    data-bs-parent="#skillsAccordion"
+                  >
+                    <div class="accordion-body">
+                      CAN / LIN / FlexRay, IP-Based Networking, HIL / SIL
+                      Testing, ECU Debugging, Firmware Debugging, Electric
+                      Vehicle Systems
                     </div>
                   </div>
+                </div>
 
-                  <div class="accordion-item">
-                    <h5 class="accordion-header" id="headingWeb">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseWeb"
-                        aria-expanded="false"
-                        aria-controls="collapseWeb"
-                      >
-                        Web Development
-                      </button>
-                    </h5>
-                    <div
-                      id="collapseWeb"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingWeb"
-                      data-bs-parent="#skillsAccordion"
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingWeb">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseWeb"
+                      aria-expanded="false"
+                      aria-controls="collapseWeb"
                     >
-                      <div class="accordion-body">
-                        HTML, CSS, JavaScript, Bootstrap, jQuery
-                      </div>
+                      Web Development
+                    </button>
+                  </h5>
+                  <div
+                    id="collapseWeb"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingWeb"
+                    data-bs-parent="#skillsAccordion"
+                  >
+                    <div class="accordion-body">
+                      HTML, CSS, JavaScript, Bootstrap, jQuery
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Projects section showcasing work from other CS courses -->
-        <section id="projects">
-          <div class="container">
-            <h2>Projects</h2>
-            <hr />
-            <div class="row g-4">
-              <!-- ChocAn Provider System -->
-              <div class="col-md-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">ChocAn Provider System</h5>
-                    <p class="card-text">
-                      A collaborative group project building the backend of a
-                      healthcare provider management system. Handles patient
-                      records, billing, staff roles, and company data for a
-                      fictional insurance-style organization.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted"
-                        >C# &nbsp;·&nbsp; Group Project &nbsp;·&nbsp; CS
-                        314</small
-                      >
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <a
-                      href="https://github.com/shawn-odom/CS314Prog"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-sm btn-outline-dark"
-                      >View on GitHub</a
+        </div>
+      </section>
+      <!-- Projects section showcasing work from other CS courses -->
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <hr />
+          <div class="row g-4">
+            <!-- ChocAn Provider System -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">ChocAn Provider System</h5>
+                  <p class="card-text">
+                    A collaborative group project building the backend of a
+                    healthcare provider management system. Handles patient
+                    records, billing, staff roles, and company data for a
+                    fictional insurance-style organization.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >C# &nbsp;·&nbsp; Group Project &nbsp;·&nbsp; CS
+                      314</small
                     >
-                  </div>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://github.com/shawn-odom/CS314Prog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-dark"
+                    >View on GitHub</a
+                  >
                 </div>
               </div>
+            </div>
 
-              <!-- PSargon2 Password Cracker -->
-              <div class="col-md-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">PSargon2 Password Cracker</h5>
-                    <p class="card-text">
-                      A low-level password cracking tool written in C targeting
-                      the Argon2 hashing algorithm. Demonstrates systems
-                      programming skills including memory management and working
-                      with cryptographic concepts.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted"
-                        >C &nbsp;·&nbsp; Systems Programming</small
-                      >
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <a
-                      href="https://github.com/shawn-odom/PSargon2_pass_cracker"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-sm btn-outline-dark"
-                      >View on GitHub</a
+            <!-- PSargon2 Password Cracker -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">PSargon2 Password Cracker</h5>
+                  <p class="card-text">
+                    A low-level password cracking tool written in C targeting
+                    the Argon2 hashing algorithm. Demonstrates systems
+                    programming skills including memory management and working
+                    with cryptographic concepts.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >C &nbsp;·&nbsp; Systems Programming</small
                     >
-                  </div>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://github.com/shawn-odom/PSargon2_pass_cracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-dark"
+                    >View on GitHub</a
+                  >
                 </div>
               </div>
+            </div>
 
-              <!-- Treasure Hunter Game -->
-              <div class="col-md-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Treasure Hunter Game</h5>
-                    <p class="card-text">
-                      A C++ turn-based game where 2+ players navigate a map
-                      collecting treasure. Built in 2 weeks for CS 302,
-                      featuring a full class hierarchy: Player, Explorer,
-                      Archaeologist, and TreasureHunter. Each with unique
-                      abilities.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted"
-                        >C++ &nbsp;·&nbsp; OOP &nbsp;·&nbsp; CS 302</small
-                      >
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <a
-                      href="https://github.com/shawn-odom/Treasure-Hunter-Game"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-sm btn-outline-dark"
-                      >View on GitHub</a
+            <!-- Treasure Hunter Game -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Treasure Hunter Game</h5>
+                  <p class="card-text">
+                    A C++ turn-based game where 2+ players navigate a map
+                    collecting treasure. Built in 2 weeks for CS 302, featuring
+                    a full class hierarchy: Player, Explorer, Archaeologist, and
+                    TreasureHunter. Each with unique abilities.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >C++ &nbsp;·&nbsp; OOP &nbsp;·&nbsp; CS 302</small
                     >
-                  </div>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://github.com/shawn-odom/Treasure-Hunter-Game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-dark"
+                    >View on GitHub</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Contact section with a form for reaching out -->
+        </div>
+      </section>
+      <!-- Contact section with a form for reaching out -->
       <section id="contact">
         <div class="container">
           <h2>Contact</h2>
           <hr />
           <div class="row justify-content-center">
             <div class="col-md-7">
-              <p>Feel free to reach out whether it's about a project, an opportunity, or just to connect.</p>
+              <p>
+                Feel free to reach out whether it's about a project, an
+                opportunity, or just to connect.
+              </p>
 
               <!-- Contact form, validation is handled in main.js -->
               <form id="contactForm" novalidate>
-
                 <div class="mb-3">
                   <label for="contactName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="contactName" placeholder="Your full name" required />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    placeholder="Your full name"
+                    required
+                  />
                   <div class="invalid-feedback" id="nameError"></div>
                 </div>
 
                 <div class="mb-3">
                   <label for="contactEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="contactEmail" placeholder="your@email.com" required />
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="your@email.com"
+                    required
+                  />
                   <div class="invalid-feedback" id="emailError"></div>
                 </div>
 
                 <div class="mb-3">
                   <label for="contactMessage" class="form-label">Message</label>
-                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="What would you like to discuss?" required></textarea>
+                  <textarea
+                    class="form-control"
+                    id="contactMessage"
+                    rows="5"
+                    placeholder="What would you like to discuss?"
+                    required
+                  ></textarea>
                   <div class="invalid-feedback" id="messageError"></div>
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                  Send Message
+                </button>
 
                 <!-- Success message shown after form is submitted -->
-                <div id="formSuccess" class="mt-3 text-success" role="status" aria-live="polite"></div>
-
+                <div
+                  id="formSuccess"
+                  class="mt-3 text-success"
+                  role="status"
+                  aria-live="polite"
+                ></div>
               </form>
             </div>
           </div>
@@ -399,13 +411,23 @@
     <!-- Footer with links to GitHub and LinkedIn -->
     <footer>
       <div class="container text-center">
-        <p>Shawn Odom &nbsp;·&nbsp; CS 463/563 PSU &nbsp;·&nbsp;
-          <a href="https://github.com/shawn-odom" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;·&nbsp;
-          <a href="https://www.linkedin.com/in/shawn-odom-80a68a32b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <p>
+          Shawn Odom &nbsp;·&nbsp; CS 463/563 PSU &nbsp;·&nbsp;
+          <a
+            href="https://github.com/shawn-odom"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          &nbsp;·&nbsp;
+          <a
+            href="https://www.linkedin.com/in/shawn-odom-80a68a32b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
         </p>
       </div>
     </footer>
-      </main>
-    </main>
   </body>
 </html>
