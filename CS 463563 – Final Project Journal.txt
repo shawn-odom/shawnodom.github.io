@@ -1,0 +1,46 @@
+CS 463/563 – Final Project Journal
+Shawn Odom
+GitHub Repo: https://github.com/shawn-odom/shawnodom.github.io
+Live Site: https://shawn-odom.github.io/shawnodom.github.io
+Uploaded Video: https://media.pdx.edu/media/t/1_21qj8rhg
+
+Session 1 – March 13
+Got the project started. Created the GitHub repo and set up the basic file structure — index.html, styles.css, and main.js all empty to start. Wrote the README with a basic description of what the project would be.
+Then started on the HTML. First thing I added was the navbar since everything else would build around it. Used Bootstrap's navbar component with the dark theme and the mobile collapse/hamburger button. Referenced the Bootstrap navbar docs to get the it working correctly
+
+Session 2 – March 14
+Worked through building out the rest of the HTML section by section
+Home section: simple dark full-page intro with my name, title, and two buttons. Ran into an issue where the "Get in Touch" button was nearly invisible because btn-outline-light doesn't show up on a light background. Realized this was because the CSS wasn't added yet did a temporary fix to dark until CSS was added
+About section: added my bio and profile photo. Had to convert the photo from .jfif to .jpg to get it to display properly in the browser. Before using object-fit cover in CSS to keep the photo from stretching inside the circular crop I originally made it with a style that made it circular and the right shape but changed this when CSS was working. Looked up the MDN docs on object-fit to get this right.
+Work & Skills section: laid out my work experience on the left and a Bootstrap accordion on the right for skills. The accordion was something we didn't cover in class from my recollection so I referenced the Bootstrap accordion docs to understand how data-bs-target, data-bs-parent, and the collapse show classes work together.
+Projects section: used Bootstrap cards to display my three projects with GitHub links. Straightforward after using cards in the homework assignments.
+Contact section + footer: added the contact form using Bootstrap form classes. Kept it simple with name, email, and message fields. The actual validation logic would come with the JavaScript.
+CSS — added all the styles. CSS variables for colors, dark hero section, circular headshot, work item borders, and footer styling. Building on what we learned in class.
+
+Session 3 – March 15
+JavaScript: this was the most involved part. Added three pieces of functionality in main.js:
+
+Mobile navbar close: used jQuery to detect when a nav link is clicked and close the hamburger menu if it's open. We used jQuery in class so this felt familiar.
+Active nav link on scroll: used window.scrollY and addEventListener to check which section the user has scrolled to and highlight the matching nav link. Referenced MDN for scrollY and addEventListener 
+Form validation: wrote validation for all three form fields before the form submits. Checks that name is at least 2 characters, email matches a regex pattern, and message is at least 10 characters. Used Bootstrap's is-invalid class to show error styling on failing fields. Used setTimeout to simulate a submission delay before showing the success message. Referenced MDN for the regex syntax and setTimeout.
+
+Accessibility fixes: ran a axeDev tools and WAVE audit in Chrome DevTools and got two issues:
+
+Button contrast ratio was failing on the project card GitHub buttons. btn-outline-secondary wasn't dark enough against the light card footer background. Swapped to btn-outline-dark which passed.
+Heading levels were being skipped: had h2 jumping to h4 in the work section and h2 jumping to h5 in the projects section. Fixed by restructuring so headings go h2 → h3 → h4 with no gaps.
+
+After fixing both issues axe and WAVE gave a 100 accessibility score.
+Final cleanup: removed a leftover comment from early development, fixed a duplicate <main> tag that had snuck in, removed a redundant inline style on the headshot image since the CSS class was already handling it (as mentioned earlier), and updated the README with sources.
+
+Sources
+
+Bootstrap Navbar docs — https://getbootstrap.com/docs/5.0/components/navbar/
+Bootstrap Accordion docs — https://getbootstrap.com/docs/5.0/components/accordion/
+Bootstrap Cards docs — https://getbootstrap.com/docs/5.0/components/card/
+Bootstrap Forms docs — https://getbootstrap.com/docs/5.0/forms/overview/
+MDN – Regular Expressions — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+MDN – Window scrollY — https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY
+MDN – addEventListener — https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+MDN – CSS object-fit — https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+MDN – setTimeout — https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+jQuery docs — https://api.jquery.com/
